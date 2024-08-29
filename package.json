@@ -2,17 +2,15 @@
   "name": "ubiquitous-umbrella-dev",
   "version": "1.0.0",
   "description": "barry's fall 2024 dev thingy",
-  "main": "app.js", 
-  "devDependencies": {},
+  "main": "app.js",
   "author": "",
   "license": "ISC",
-
   "scripts": {
     "dev": "nodemon app.js"
   },
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
     "nodemon": "^3.1.4"
   }
- 
 }
