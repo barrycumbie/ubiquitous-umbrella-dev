@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+app.use(express.static('./public/'))
+
 console.log('im on a node server change that and that tanad f, yo');
 
 app.get('/', function (req, res) {
