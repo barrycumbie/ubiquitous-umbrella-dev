@@ -1,14 +1,15 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = process.env.MONGO_URI; 
+
 app.set('view engine', 'ejs')
 app.use(express.static('./public/'))
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = process.ENV.uri; 
 
 console.log(uri);
 
-// console.log('im on a node server change that and that tanad f, yo');
-
+console.log('im on a node server change that and that tanad f, yo');
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -32,6 +33,27 @@ async function run() {
   }
 }
 run().catch(console.dir);
+
+// function whateverNameOfIt (params) {}
+// ()=>{}
+
+app.get('/mongo', async (req,res)=>{
+
+  console.log('in /mongo');
+  await client.connect();
+  
+  console.log('connected?');
+  // Send a ping to confirm a successful connection
+  
+  let result = await client.db("barrys-db").collection("whatever-collection")
+    .find({}).toArray(); 
+  console.log(result); 
+
+  res.render('mongo', {
+    mongoResult : result
+  });
+
+})
 
 
 app.get('/', function (req, res) {
