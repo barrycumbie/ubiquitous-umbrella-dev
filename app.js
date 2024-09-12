@@ -1,16 +1,13 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
- 
-  const bodyParser = require('body-parser')
-  const { urlencoded } = require('body-parser')
-  const { ObjectId } = require('mongodb')
+const bodyParser = require('body-parser')
+const { urlencoded } = require('body-parser')
+const { ObjectId } = require('mongodb')
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = `mongodb+srv://barry:${process.env.MONGO_PWD}@cluster0.5abxx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`; 
 
 app.use(bodyParser.urlencoded({ extended: true }))
- 
-
 app.set('view engine', 'ejs')
 app.use(express.static('./public/'))
 
@@ -91,22 +88,16 @@ app.get('/insert', async (req,res)=> {
 
 app.post('/update/:id', async (req,res)=>{
 
-   // //connect to db,
-  // await client.connect();
-  // //point to the collection 
-  // await client.db("barrys-db").collection("whatever-collection").findOneAndUpdate(
-  //      { "post" : "another day " },
-  //      { $set: {"post" : "the next other day" } }
-  // );
+  console.log("req.parms.id: ", req.params.id)
 
   client.connect; 
   const collection = client.db("barrys-db").collection("whatever-collection");
   let result = await collection.findOneAndUpdate( 
-  {"_id": ObjectId(req.params.id)}, { $set: {"post": "NEW POST" } }
+  {"_id": new ObjectId(req.params.id)}, { $set: {"post": "NEW POST" } }
 )
 .then(result => {
   console.log(result); 
-  res.redirect('/');
+  res.redirect('/read');
 })
  
   //insert into it
@@ -115,4 +106,4 @@ app.post('/update/:id', async (req,res)=>{
 
 })
 
-app.listen(5000)
+app.listen(5500)
