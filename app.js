@@ -2,7 +2,8 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = process.env.MONGO_URI; 
+const uri = `mongodb+srv://barry:${process.env.MONGO_PWD}@cluster0.5abxx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`; 
+
 
 app.set('view engine', 'ejs')
 app.use(express.static('./public/'))
@@ -37,7 +38,21 @@ run().catch(console.dir);
 // function whateverNameOfIt (params) {}
 // ()=>{}
 
-app.get('/mongo', async (req,res)=>{
+app.get('/', function (req, res) {
+  // res.send('Hello Node from Ex on local dev box')
+  res.sendFile('index.html');
+})
+
+app.get('/ejs', (req,res)=>{
+``
+  res.render('index', {
+    myServerVariable : "something from server"
+  });
+
+  //can you get content from client...to console? 
+})
+
+app.get('/read', async (req,res)=>{
 
   console.log('in /mongo');
   await client.connect();
@@ -55,19 +70,17 @@ app.get('/mongo', async (req,res)=>{
 
 })
 
+app.get('/insert', async (req,res)=> {
 
-app.get('/', function (req, res) {
-  // res.send('Hello Node from Ex on local dev box')
-  res.sendFile('index.html');
-})
+  console.log('in /insert');
+  //connect to db,
+  await client.connect();
+  //point to the collection 
+  await client.db("barrys-db").collection("whatever-collection").insertOne({ post: 'hardcoded post insert '});
+  await client.db("barrys-db").collection("whatever-collection").insertOne({ iJustMadeThisUp: 'hardcoded new key '});  
+  //insert into it
+  res.render('insert');
 
-app.get('/ejs', (req,res)=>{
-``
-  res.render('index', {
-    myServerVariable : "something from server"
-  });
-
-  //can you get content from client...to console? 
-})
+}); 
 
 app.listen(5000)
