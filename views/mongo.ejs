@@ -8,6 +8,9 @@
     <%= postData[i].post %> 
     <input type="submit" value="update"> 
   </form>
+  <form method="POST" action="/delete/<%= postData[i]._id %>" style="display: inline-block">  
+    <input type="submit" value="delete"> 
+  </form>
   <br/>
 <% } %>
 
