@@ -2,6 +2,6 @@
 barry's fall 2024 dev thingy
 
 
-barry's dev lewis [app](https://ubiquitous-umbrella-dev.onrender.com/read) & repo...
+barry's dev lewis [app](https://hello-node1.onrender.com/) & repo...https://github.com/MohammedAlrasheidi/hello-node
 
 upodateaw...k 
