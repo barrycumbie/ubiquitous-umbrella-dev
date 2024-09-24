@@ -20,7 +20,7 @@ levon dev-lewis : [improved-spoon-ida](https://improved-spoon-ida.onrender.com/)
 
 Sam's dev-Lewis:  [app](https://effective-lamp-sam01.onrender.com) and [repo](https://github.com/smaldonado1326/effective-lamp-sam01/tree/dev-lewis)
 
-
+Trev's dev lewis [app](https://ubiquitous-umbrella-devtrev-3.onrender.com/read)
 barry's dev lewis [app](https://ubiquitous-umbrella-dev.onrender.com/read) & repo...
 
 
