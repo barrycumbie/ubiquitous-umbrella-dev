@@ -7,9 +7,14 @@ levon dev-lewis : [improved-spoon-ida](https://improved-spoon-ida.onrender.com/)
 
 
 Mohammed dev lewis [app](https://hello-node1.onrender.com/) & [repo]...(https://github.com/MohammedAlrasheidi/hello-node)
-=======
+
 
 barry's dev lewis [app](https://ubiquitous-umbrella-dev.onrender.com/read) & repo...
+
+
+brenda's dev lewis [app](https://computingyapper.onrender.com/read) & [repo](https://github.com/bjruiz/computingyapper)
+
+brandon's dev lewis [app](https://umbrella-dev-real.onrender.com/mongo) & See the code at: [repo](https://github.com/Bjacks01/umbrella-dev-Real)
 
 
 Zach's fall 2024 project
@@ -19,7 +24,6 @@ Zach's dev lewis [app](https://ubiquitous-umbrella.onrender.com/read)
 Zach's dev lewis repo [app](https://github.com/Almostheaven52/ubiquitous-umbrella)
 
 
-upodateaw...k 
 
 dgfdsafases
 
