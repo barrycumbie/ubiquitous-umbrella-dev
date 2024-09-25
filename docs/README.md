@@ -23,6 +23,7 @@ Sam's dev-Lewis:  [app](https://effective-lamp-sam01.onrender.com) and [repo](ht
 Trev's dev lewis [app](https://ubiquitous-umbrella-devtrev-3.onrender.com/read)
 barry's dev lewis [app](https://ubiquitous-umbrella-dev.onrender.com/read) & repo...
 
+Isabelle's dev-lewis [app](https://miniature-octo-spoon.onrender.com/) & [repo](https://github.com/isabellerushing/miniature-octo-spoon)
 
 brenda's dev lewis [app](https://computingyapper.onrender.com/read) & [repo](https://github.com/bjruiz/computingyapper)
 
@@ -35,9 +36,6 @@ Zach's dev lewis [app](https://ubiquitous-umbrella.onrender.com/read)
 
 Zach's dev lewis repo [app](https://github.com/Almostheaven52/ubiquitous-umbrella)
 
-
-
-upodateaw...k 
 
 Rodnesia Goodloe
 Render Link[app](https://rollerskate-75m7.onrender.com)
