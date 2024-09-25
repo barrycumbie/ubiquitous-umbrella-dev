@@ -2,6 +2,14 @@
 barry's fall 2024 dev thing
 
 
+
+barry's dev lewis [app](https://ubiquitous-umbrella-dev.onrender.com/read) & repo...
+
+
+
+
+Mackenzie's dev lewis [app](https://ideal-parakeet-mt.onrender.com/read) & [repo](https://github.com/mackenzie24t/ideal-parakeet-mt/tree/dev-lewis)
+
 Kalani dev-lewis [repo](https://github.com/babayaga1013/dev-ida-lab-sorensen) and [render](https://dev-ida-lab-sorensen-1.onrender.com/)
 
 
