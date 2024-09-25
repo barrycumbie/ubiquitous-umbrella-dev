@@ -1,7 +1,12 @@
 # ubiquitous-umbrella-dev
+
+matthew's fall 2024 dev thingy
+
 barry's fall 2024 dev thing
 
+matthew's dev lewis app [https://laughing-waffle-matthew.onrender.com/]
 
+matthew' dev lewis repo [https://github.com/mattimus11/laughing-waffle-matthew]
 
 barry's dev lewis [app](https://ubiquitous-umbrella-dev.onrender.com/read) & repo...
 
