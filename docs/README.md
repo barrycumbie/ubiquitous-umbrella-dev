@@ -2,6 +2,14 @@
 barry's fall 2024 dev thing
 
 
+
+barry's dev lewis [app](https://ubiquitous-umbrella-dev.onrender.com/read) & repo...
+
+
+
+
+Mackenzie's dev lewis [app](https://ideal-parakeet-mt.onrender.com/read) & [repo](https://github.com/mackenzie24t/ideal-parakeet-mt/tree/dev-lewis)
+
 Kalani dev-lewis [repo](https://github.com/babayaga1013/dev-ida-lab-sorensen) and [render](https://dev-ida-lab-sorensen-1.onrender.com/)
 
 
@@ -31,6 +39,11 @@ Trev's dev lewis [app](https://ubiquitous-umbrella-devtrev-3.onrender.com/read)
 
 barry's dev lewis [app](https://ubiquitous-umbrella-dev.onrender.com/read) & repo...
 
+daltons dev lewis [app]https://sturdy-octo-couscous-dev.onrender.com/ & [repo](https://github.com/daltrodg/sturdy-octo-couscous-dev/tree/dev-lewis) 
+
+Jacob's dev lewis [app](https://dev-lewis.onrender.com/) & [repo](https://github.com/Jacob-Vance/dev-lewis-pull)
+
+Isabelle's dev-lewis [app](https://miniature-octo-spoon.onrender.com/) & [repo](https://github.com/isabellerushing/miniature-octo-spoon)
 
 brenda's dev lewis [app](https://computingyapper.onrender.com/read) & [repo](https://github.com/bjruiz/computingyapper)
 
@@ -44,11 +57,14 @@ Zach's dev lewis [app](https://ubiquitous-umbrella.onrender.com/read)
 Zach's dev lewis repo [app](https://github.com/Almostheaven52/ubiquitous-umbrella)
 
 
+Rodnesia Goodloe
+Render Link[app](https://rollerskate-75m7.onrender.com)
+Repo Link[app](https://github.com/nesiagoodloe/potiential-eureka-rollerSkate-/tree/dev-lewis)
 
-dgfdsafases
+
+mandy's dev lewis [app](https://igloo-llama-yacht.onrender.com/read) & [repo](https://github.com/mmandelyn/igloo.llama.yacht)
 
 https://github.com/pglenn1/ubiquitous-umbrella-dev
 https://ubiquitous-umbrella-dev-1g64.onrender.com/
-
 
 
