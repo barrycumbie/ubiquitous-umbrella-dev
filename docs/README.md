@@ -23,6 +23,7 @@ Sam's dev-Lewis:  [app](https://effective-lamp-sam01.onrender.com) and [repo](ht
 Trev's dev lewis [app](https://ubiquitous-umbrella-devtrev-3.onrender.com/read)
 barry's dev lewis [app](https://ubiquitous-umbrella-dev.onrender.com/read) & repo...
 
+daltons dev lewis [app]https://sturdy-octo-couscous-dev.onrender.com/ & [repo](https://github.com/daltrodg/sturdy-octo-couscous-dev/tree/dev-lewis) 
 
 Jacob's dev lewis [app](https://dev-lewis.onrender.com/) & [repo](https://github.com/Jacob-Vance/dev-lewis-pull)
 
@@ -49,4 +50,5 @@ mandy's dev lewis [app](https://igloo-llama-yacht.onrender.com/read) & [repo](ht
 
 https://github.com/pglenn1/ubiquitous-umbrella-dev
 https://ubiquitous-umbrella-dev-1g64.onrender.com/
+
 
