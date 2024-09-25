@@ -12,6 +12,7 @@ Mackenzie's dev lewis [app](https://ideal-parakeet-mt.onrender.com/read) & [repo
 
 Kalani dev-lewis [repo](https://github.com/babayaga1013/dev-ida-lab-sorensen) and [render](https://dev-ida-lab-sorensen-1.onrender.com/)
 
+Reed's dev-lewis repo: (https://github.com/RMcDowra/fluffy-doodle-dev) and app: (https://fluffy-doodle-dev.onrender.com/)
 
 Johnny's dev lewis [app](https://cautious-doodle-dev.onrender.com/) and [repo](https://github.com/JohnnyCaringi/cautious-doodle-dev)
 
@@ -66,5 +67,3 @@ mandy's dev lewis [app](https://igloo-llama-yacht.onrender.com/read) & [repo](ht
 
 https://github.com/pglenn1/ubiquitous-umbrella-dev
 https://ubiquitous-umbrella-dev-1g64.onrender.com/
-
-
