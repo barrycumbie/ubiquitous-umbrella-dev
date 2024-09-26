@@ -1,3 +1,248 @@
-<h1>my ejs page</h1>
-<br> 
 <%=myServerVariable %> 
+
+<!-- 
+  author: barry  
+  version: 1.2 (dev box)
+  github: barry-cumbie (barrycumbie)  
+-->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>bc secret guitar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="styles/guitar-style.css">
+
+</head>
+<body>
+
+<!-- <button class="btn btn-info m-3">clickin</button> -->
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <i class="bi bi-cassette"></i>
+      Barry's Secret Guitar APP</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item fluid">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Song List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Guitars</a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li> -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="pages/about.html">about barry</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" target="repo" href="https://github.com/barrycumbie/urban-fishstick-guitar-app/">
+            &lt;source code <i class="bi bi-github"></i>&gt;</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" target="nu" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbarrycumbie.github.io%2Furban-fishstick-guitar-app%2F">
+            check page validity ✅</a>
+        </li>
+       
+
+
+        <!--    <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Resources</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="m-2 p-2 row">
+  <div class="col-lg-8 offset-lg-2">
+  <h2>Songs I play</h2>
+  <div class="mb-3">
+
+    <button id="btnAddSong" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#addSongModal">add song</button>
+    
+    <button id="btnShowAll" class="btn btn-info btn-sm">show all</button>
+    <button id="btnHideAll" class="btn btn-info btn-sm">hide all</button>
+
+    <button id="btnConsoleData" class="btn btn-info btn-sm">write data object in console</button>
+
+  </div>
+
+    <!-- Modal -->
+    <div id="addSongModal" class="modal fade" tabindex="-1" aria-labelledby="addSongModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add New Song</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+
+              <li class="input-group w-100">
+                <span class="w-20 input-group-text">song name</span>
+                <input id="songAddName" type="text" class="form-control" placeholder="song name">
+              </li>
+
+              <li class="input-group w-100">
+                <span class="w-20 input-group-text">artist</span>
+                <input id="songAddArtist" type="text" class="form-control" placeholder="artist" >
+              </li>
+
+              <li class="input-group w-100">
+                <span class="w-20 input-group-text">status</span>
+                <input id="songAddStatus" type="text" class="form-control" placeholder="status">
+              </li>
+          
+              <li class="input-group w-100">
+                <span class="w-20 input-group-text">chords</span>
+                 <input id="songAddChords" type="text" class="form-control" placeholder="chords">
+              </li>
+          
+              <li class="input-group w-100">
+                <span class="w-20 input-group-text">lyrics?</span>
+                <input id="songAddLyrics" type="text" class="form-control" placeholder="lyrics">
+              </li>
+          
+              <li class="input-group w-100">
+                <span class="w-20 input-group-text">next?</span>
+                <input id="songAddNext" type="text" class="form-control" placeholder="next steps?">
+              </li>
+          
+              <li class="input-group w-100">
+                <span class="w-20 input-group-text">Notes</span>
+                  <input id="songAddNotes" type="text" class="form-control" placeholder="notes about it">
+              </li>
+          
+              <li class="input-group w-100">
+                <span class="w-20 input-group-text">Tags</span>
+                  <input id="songAddTags" type="text" class="form-control" placeholder="tags, separated, by, commas">
+              </li>
+          
+              <li class="input-group w-100">
+                <span class="w-20 input-group-text">Links</span>
+                <input id="songAddLinks" type="text" class="form-control" placeholder="links, separated, by, commas">
+              </li>
+          
+              <!-- <li class="input-group w-100">
+                <span class="w-20 input-group-text">Spotify?</span>
+                <span class="list-group-item form-control" id="songNoStatus">Yes/no</span>
+              </li> -->
+          
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button id="btnSaveSong" type="button" class="btn btn-primary">save song</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+  <ul id="songList" class="list-group">
+    <li class="list-group-item">no songs loaded</li>
+   
+   <!-- hardcoded html template -->
+    <!-- <li class="list-group-item">
+      <span id="songNoName">Song No. Name</span>
+      <ul class="list-group">
+        <li class="input-group w-100">
+            <span class="w-20 input-group-text">artist</span>
+            <span class="list-group-item form-control" id="songNoArtist">Song No. Artist</span>
+        </li>
+        <li class="input-group w-100">
+          <span class="w-20 input-group-text">status</span>
+          <span class="list-group-item form-control" id="songNoStatus">Song No. Status: good, bad, needs work...</span>
+        </li>
+       
+        <li class="input-group w-100">
+          <span class="w-20 input-group-text">chords</span>
+          <span class="list-group-item form-control" id="songNoStatus">Song No. chords: yes, no, maybe?</span>
+        </li>
+
+        <li class="input-group w-100">
+          <span class="w-20 input-group-text">lyrics?</span>
+          <span class="list-group-item form-control" id="songNoStatus">Song No. lyrics: yes, no maybe?</span>
+        </li>
+
+        <li class="input-group w-100">
+          <span class="w-20 input-group-text">next?</span>
+          <span class="list-group-item form-control" id="songNoStatus">Song No. what to do next: practice?</span>
+        </li>
+
+        <li class="input-group w-100">
+          <span class="w-20 input-group-text">Notes</span>
+          <span class="list-group-item form-control" id="songNoStatus">Song No. notes: key, capo, riffs, fills</span>
+        </li>
+
+        <li class="input-group w-100">
+          <span class="w-20 input-group-text">Tags</span>
+          <span class="list-group-item form-control" id="songNoStatus">
+            <span class="badge bg-secondary">tag1</span> 
+            <span class="badge bg-secondary">tag2</span>
+            <span class="badge bg-secondary">tag3</span>
+            <span class="badge bg-secondary">tag4</span>
+          </span>
+        </li>
+
+        <li class="input-group w-100">
+          <span class="w-20 input-group-text">Links</span>
+          <span class="list-group-item form-control" id="songNoStatus">
+            <a href="#">link1</a>
+            <a href="#">link2</a>
+            <a href="#">link3</a>
+            <a href="#">link4</a>
+          </span>
+        </li>
+
+        <li class="input-group w-100">
+          <span class="w-20 input-group-text">Spotify?</span>
+          <span class="list-group-item form-control" id="songNoStatus">Yes/no</span>
+        </li>
+      
+      </ul>
+    </li> -->
+    
+  </ul>
+</div>
+</main>
+
+<footer class="footer bg-bg-tertiary text-center text-lg-start fixed-bottom">
+
+<!-- <footer class="footer">  -->
+<!-- <footer class="footer mt-auto py-3 bg-light"> -->
+   
+  <!-- Copyright -->
+  <div class="text-center p-3 container-fluid" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024
+    <a class="text-body" href="https://github.com/barrycumbie" target="github">bc@github</a> |
+    <!-- <a href="README.md" target="readme">readme</a> | -->
+    <a href="https://gist.github.com/assets/22795694/d414efab-a80c-4b31-aeac-9636a0681f41" target="_blank">see my wireframe</a>
+    <!-- Copyright -->
+  </div>
+</footer>
+<!-- scripts go here -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'>
+  </script>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/guitar-script.js"></script>
+  
+</body>
+</html>
