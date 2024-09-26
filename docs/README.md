@@ -1,5 +1,8 @@
 # ubiquitous-umbrella-dev
 
+Rules to Collobarate: 
+https://github.com/barrycumbie/ubiquitous-umbrella-dev/wiki/Our-Dev-Processs 
+
 matthew's fall 2024 dev thingy
 
 barry's fall 2024 dev thing
