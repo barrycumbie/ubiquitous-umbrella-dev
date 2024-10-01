@@ -1,6 +1,14 @@
 <!-- read from my mongo -->
 <h1>see my mongoDB results</h1>
 
+<h1> insert something into mongo</h1>
+
+<form method="POST" action="/insert" style="display: inline-block">  
+    <label for="newPost"> 
+    <input id="newPost" name="newPost">
+    <input name="somethingElseIJustMadeUp">     
+    <input type="submit" value="update"> 
+</form>
 
 <h3> my blog posts</h3> 
  <% for (var i=0; i< postData.length; i++ ) { %>

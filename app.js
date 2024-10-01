@@ -24,20 +24,6 @@ const client = new MongoClient(uri, {
   }
 });
 
-async function run() {
-  try {
-    // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
-    // Send a ping to confirm a successful connection
-    await client.db("admin").command({ ping: 1 });
-    console.log("Pinged your deployment. You successfully connected to MongoDB!");
-  } finally {
-    // Ensures that the client will close when you finish/error
-    await client.close();
-  }
-}
-run().catch(console.dir);
-
 // function whateverNameOfIt (params) {}
 // ()=>{}
 
@@ -57,7 +43,7 @@ app.get('/ejs', (req,res)=>{
 
 app.get('/read', async (req,res)=>{
 
-  console.log('in /mongo');
+  console.log('in /read');
   await client.connect();
   
   console.log('connected?');
@@ -67,22 +53,26 @@ app.get('/read', async (req,res)=>{
     .find({}).toArray(); 
   console.log(result); 
 
-  res.render('mongo', {
+  res.render('read', {
     postData : result
   });
 
 })
 
-app.get('/insert', async (req,res)=> {
+app.post('/insert', async (req,res)=> {
 
   console.log('in /insert');
+  
+  console.log('request', req.body);
+  console.log('request', req.body.newPost);
+
   //connect to db,
   await client.connect();
   //point to the collection 
-  await client.db("barrys-db").collection("whatever-collection").insertOne({ post: 'hardcoded post insert '});
-  await client.db("barrys-db").collection("whatever-collection").insertOne({ iJustMadeThisUp: 'hardcoded new key '});  
+  await client.db("barrys-db").collection("whatever-collection").insertOne({ post: req.body.newPost});
+  // await client.db("barrys-db").collection("whatever-collection").insertOne({ iJustMadeThisUp: 'hardcoded new key '});  
   //insert into it
-  res.render('insert');
+  res.redirect('read');
 
 }); 
 
