@@ -75,3 +75,5 @@ mandy's dev lewis [app](https://igloo-llama-yacht.onrender.com/read) & [repo](ht
 
 https://github.com/pglenn1/ubiquitous-umbrella-dev
 https://ubiquitous-umbrella-dev-1g64.onrender.com/
+
+Tys dev lewis [repo](https://github.com/TychicusThomas/ubiquitous-umbrella-first) & [app](https://ubiquitous-umbrella-first.onrender.com/)
